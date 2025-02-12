@@ -1,0 +1,61 @@
+```gitignore
+# Exclude build artifacts and temporary files
+**/Debug/
+**/Release/
+**/build/
+**/out/
+*.bin
+*.elf
+*.hex
+*.map
+*.list
+*.o
+*.d
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Exclude IDE-specific files
+.vscode/
+*.launch
+.settings/
+
+# Exclude CubeMX generated backup and temporary files
+**/*_backup.ioc
+**/.mxproject
+**/.cproject
+**/.project
+
+# Exclude metadata folder
+metadata/
+
+# Exclude OS generated files
+.DS_Store
+Thumbs.db
+
+# Include only source and configuration files necessary to build the project with CubeMX
+!Bootloader/Core/Inc/*.h
+!Bootloader/Core/Src/*.c
+!Application1/Core/Inc/*.h
+!Application1/Core/Src/*.c
+!Application2/Core/Inc/*.h
+!Application2/Core/Src/*.c
+!Bootloader/*.ioc
+!Application1/*.ioc
+!Application2/*.ioc
+!**/*.ld
+!**/README.md
+
+# Exclude unnecessary middleware and driver files
+**/Middlewares/
+**/Drivers/
+
+# Include essential middleware and driver files if necessary
+!Bootloader/Middlewares/**
+!Application1/Middlewares/**
+!Application2/Middlewares/**
+!Bootloader/Drivers/**
+!Application1/Drivers/**
+!Application2/Drivers/**
+```

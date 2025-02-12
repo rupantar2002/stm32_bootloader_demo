@@ -1,0 +1,37 @@
+# STM32CubeMX specific files
+**/Debug/
+**/Release/
+**/*.bin
+**/*.elf
+**/*.hex
+**/*.map
+**/*.list
+**/*.o
+**/*.d
+
+# CubeMX configuration backup files
+**/*_backup.ioc
+
+# CubeMX temporary files
+**/.mxproject
+**/.cproject
+**/.project
+
+# Build system temporary files
+build/
+out/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE specific files
+*.launch
+*.settings/
+.vscode/
+*.ioc.bak
+*.dep
+
+# General OS generated files
+.DS_Store
+Thumbs.db
